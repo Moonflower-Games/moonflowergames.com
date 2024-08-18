@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ if title }}{{ title }}{{ else }}{{ site.name }}{{ /if }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="min-h-screen bg-stone-100 text-slate-900 font-sans grid grid-cols-[1fr_min(55rem,90%)_1fr]">
+
+<header class="col-start-2 text-center">
+  <nav>
+  </nav>
+
+  <h1>{{ title }}</h1>
+
+</header>
+
+<main class="col-start-2">
+
+  {{ content }}
+
+</main>
+
+<footer class="col-start-2 col-end-auto text-center">
+  <p>Site copyright &copy; 2024 {{ site.author }}.</p>
+  <p><a href="/about/">About</a></p>
+</footer>
+
+</body>
+</html>
